@@ -1,6 +1,6 @@
 // js code here
 $(window).load(function () {
-  $("#loading").fadeOut(300);
+  $("#loading").fadeOut(100);
 });
 new WOW().init();
 // aos
@@ -131,4 +131,5 @@ $(function () {
     return false;
   });
   // back to top end
+  Dots.generate();
 });

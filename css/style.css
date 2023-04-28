@@ -29,6 +29,7 @@ p {
 /* common css  */
 /* typed js start */
 #typing_js {
+  /* margin: 0; */
   height: 300px;
 }
 #typed {
@@ -152,7 +153,7 @@ p {
   transition: all 0.3s;
 }
 .slick_slider {
-  margin: 100px 0;
+  /* margin: 100px 0; */
   padding: 100px 0;
   background-color: cadetblue;
 }
@@ -301,6 +302,7 @@ p {
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   border-radius: 60px;
+  z-index: 1;
 }
 #scroll span {
   position: absolute;
@@ -320,3 +322,89 @@ p {
   -ms-filter: "alpha(opacity=100)";
 }
 /* scroll to top end */
+/* parallax start  */
+.parallax {
+  min-height: 400px;
+  background: rgb(32, 6, 6, 0.5);
+}
+/* parallax end  */
+
+/* progressbar counterup start  */
+.progressbar-item {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  margin: 0 0 10px;
+  overflow: visible;
+  background: transparent;
+}
+
+.progress-number {
+  padding-bottom: 7px;
+  position: relative;
+  margin: 5px 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.progress-title {
+  z-index: 100;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.progress-number-mark {
+  font-family: var(--progress-font, "Open Sans", sans-serif);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-16);
+  line-height: 1;
+  padding: 8px 8px 7px;
+  border-radius: 3px;
+  color: var(--progress-number-color, #fff);
+  margin-bottom: 4px;
+  border-radius: 3px;
+  background: var(--progress-number-bg, #5f5f5f);
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.down-arrow {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid var(--progress-number-bg, #5f5f5f);
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+.progress-bg {
+  height: 6px;
+  background: var(--progressbar-bg, #f0f0f0);
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.progress-fill {
+  height: 6px;
+  background: var(
+    --progressbar-fill,
+    linear-gradient(to right, #b464ff 0%, #3c64eb 100%)
+  );
+  width: 0%;
+  border-radius: 6px;
+}
+/* progressbar counterup end */
+
+.light_box_img {
+  box-shadow: 0 0 10px grey;
+}
+.light_box_img img {
+  border-radius: 20px;
+}
