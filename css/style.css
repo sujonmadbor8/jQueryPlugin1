@@ -79,7 +79,10 @@ p {
 /* pie chart start  */
 .pie_chart {
   /* background-color: #000000; */
-  height: 300px;
+  min-height: 300px;
+}
+.chart_item {
+  margin-top: 30px;
 }
 .chart_item .chart {
   position: relative;
@@ -407,4 +410,7 @@ p {
 }
 .light_box_img img {
   border-radius: 20px;
+}
+.lightbox_btn_c button {
+  margin-top: 20px;
 }
